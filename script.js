@@ -55,10 +55,10 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
         insertDataOption: "INSERT_ROWS",
         resource: body
     }).then((response) => {
-        console.log('Data inserted successfully');
-        console.log(response);
+        alert('Data inserted successfully');
+        alert(response);
         document.getElementById('data-form').reset(); // Reset form fields
     }, (error) => {
-        console.error('Error inserting data', error);
+        alert('Error inserting data', error);
     });
 });
