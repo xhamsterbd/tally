@@ -65,12 +65,11 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
     }).then((response) => {
         alert('Data inserted successfully');
         document.getElementById('data-form').reset(); // Reset form fields
-    }, (error) => {
+    }).catch( error => {
         const container = document.getElementById('sheet-data');
         container.innerHTML = error.message;
         alert('Error inserting data: ' + error.message);
     });
-});
 
 // Start the Google API client
 gapi.load('client:auth2', start);
