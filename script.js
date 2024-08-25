@@ -66,7 +66,7 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
         document.getElementById('data-form').reset(); // Reset form fields
     }, (error) => {
         alert('Error inserting data: ' + error.message);
-    });¹11
+    });
 });
 
 // Start the Google API client
