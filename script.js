@@ -59,6 +59,6 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
         alert(response);
         document.getElementById('data-form').reset(); // Reset form fields
     }, (error) => {
-        alert('Error inserting data', error);
+        alert('Error inserting data', error.message);
     });
 });
