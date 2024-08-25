@@ -54,7 +54,7 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
     const body = {
         values: values
     };
-    alert(body);
+    alert(data1);
     
     gapi.client.sheets.spreadsheets.values.append({
         spreadsheetId: SHEET_ID,
