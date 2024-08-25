@@ -1,7 +1,7 @@
 const CLIENT_ID = '559511833873-qdm724gc649edfo707tlm6d4sa1ta1sp.apps.googleusercontent.com'; // Your Client ID
 const API_KEY = 'AIzaSyDE2s5psY3y30C40EUBEPgvQo0b_fCjQH4'; // Your API Key
 const SHEET_ID = '1Lr5LGzj_dNYW0cvuypPO4VvYZOtmRmOHNkNPZDBNMd4'; // Your Sheet ID
-const RANGE = 'Sheet1!A1:D1'; // Range for appending data
+const RANGE = 'Sheet1!A1:D10'; // Range for appending data
 
 // Initialize the Google API client
 function initClient() {
@@ -66,7 +66,7 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
         document.getElementById('data-form').reset(); // Reset form fields
     }, (error) => {
         alert('Error inserting data: ' + error.message);
-    });
+    });¹11
 });
 
 // Start the Google API client
