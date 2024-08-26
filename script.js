@@ -67,7 +67,7 @@ document.getElementById('data-form').addEventListener('submit', function(event) 
         document.getElementById('data-form').reset(); // Reset form fields
     }), function( (error) => {
         const container = document.getElementById('sheet-data');
-        container.innerHTML = error.message;
+        container.innerHTML = JSON.stringify(error);
         alert('Error inserting data: ' + error.message);
     });
 });
